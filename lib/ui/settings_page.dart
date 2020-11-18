@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:newsapp_cuppertino/widgets/platform_widget.dart';
 
@@ -29,21 +30,39 @@ class SettingsPage extends StatelessWidget {
             trailing: Switch.adaptive(
                 value: false,
                 onChanged: (value) {
-                  showDialog(
-                      context: context,
-                      builder: (context) {
-                        return AlertDialog(
-                          title: Text('Coming Soon'),
-                          content: Text('This feature will be coming soon'),
-                          actions: [
-                            FlatButton(
-                                onPressed: () {
-                                  Navigator.pop(context);
-                                },
-                                child: Text('Ok'))
-                          ],
-                        );
-                      });
+                  defaultTargetPlatform == TargetPlatform.iOS
+                      ? showCupertinoDialog(
+                          context: null,
+                          builder: (context) {
+                            return CupertinoAlertDialog(
+                              title: Text('coming soon'),
+                              content:
+                                  Text('This feature will be coming soon!'),
+                              actions: [
+                                CupertinoDialogAction(
+                                  child: Text('Ok'),
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
+                                )
+                              ],
+                            );
+                          })
+                      : showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: Text('Coming Soon'),
+                              content: Text('This feature will be coming soon'),
+                              actions: [
+                                FlatButton(
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                    },
+                                    child: Text('Ok'))
+                              ],
+                            );
+                          });
                 }),
           ),
         )

@@ -1,7 +1,7 @@
 import 'package:newsapp_cuppertino/ui/home_page.dart';
-import 'package:newsapp_cuppertino/ui/detail_page.dart';
-import 'package:newsapp_cuppertino/ui/article_web.dart';
-import 'package:newsapp_cuppertino/styles.dart';
+import 'package:newsapp_cuppertino/ui/article_detail_page.dart';
+import 'package:newsapp_cuppertino/ui/article_web_view.dart';
+import 'package:newsapp_cuppertino/common/styles.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

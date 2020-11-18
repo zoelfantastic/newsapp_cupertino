@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
-import 'package:newsapp_cuppertino/styles.dart';
+import 'package:newsapp_cuppertino/common/styles.dart';
 import 'package:newsapp_cuppertino/ui/article_list_page.dart';
 import 'package:newsapp_cuppertino/ui/settings_page.dart';
 import 'package:newsapp_cuppertino/widgets/platform_widget.dart';

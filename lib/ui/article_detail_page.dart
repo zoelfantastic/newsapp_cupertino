@@ -1,5 +1,5 @@
-import 'package:newsapp_cuppertino/article.dart';
-import 'package:newsapp_cuppertino/ui/article_web.dart';
+import 'package:newsapp_cuppertino/data/model/article.dart';
+import 'package:newsapp_cuppertino/ui/article_web_view.dart';
 import 'package:flutter/material.dart';
 
 class ArticleDetailPage extends StatelessWidget {

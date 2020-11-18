@@ -1,5 +1,5 @@
-import 'package:newsapp_cuppertino/article.dart';
-import 'package:newsapp_cuppertino/ui/detail_page.dart';
+import 'package:newsapp_cuppertino/data/model/article.dart';
+import 'package:newsapp_cuppertino/ui/article_detail_page.dart';
 import 'package:newsapp_cuppertino/widgets/platform_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
